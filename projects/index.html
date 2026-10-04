@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+<title>projects — kevin kiyose pyo</title>
+<meta name="author" content="Kevin Kiyose Pyo" />
+<meta name="description" content="Projects by Kevin Kiyose Pyo: real-time data pipelines, backend services, and autonomous agents." />
+<meta property="og:title" content="projects — kevin kiyose pyo" />
+<meta property="og:description" content="Projects by Kevin Kiyose Pyo: real-time data pipelines, backend services, and autonomous agents." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://kevinkiyosepyo.github.io/dsc106-lab1-portfolio/projects/" />
+<link rel="canonical" href="https://kevinkiyosepyo.github.io/dsc106-lab1-portfolio/projects/" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+<div class="storm" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">skip to content</a>
+
+<nav class="site-nav" aria-label="site navigation">
+  <a href="../index.html">home</a>
+  <a href="../projects/index.html" aria-current="page">projects</a>
+  <a href="../resume/index.html">resume</a>
+  <a href="../contact/index.html">contact</a>
+  <a href="https://github.com/kevinkiyosepyo" target="_blank" rel="noopener noreferrer">github <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a>
+</nav>
+
+<div class="wrap">
+  <header class="page-head">
+    <div class="idx">01 / projects</div>
+    <h1>projects</h1>
+    <p class="tagline">real time data, backend systems, and agents that finish the work.</p>
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="shipped">
+      <h2 id="shipped">shipped</h2>
+
+      <article class="entry" id="lightning">
+        <div class="entry-top">
+          <h3 class="entry-title">
+            <a href="https://github.com/kevinkiyosepyo/Lightning-Data-Pipeline-API">lightning strike data pipeline <span aria-hidden="true">&rarr;</span></a>
+          </h3>
+          <p class="entry-date"><time datetime="2025-11">nov 2025</time> &ndash; <time datetime="2026-02">feb 2026</time></p>
+        </div>
+        <p class="entry-desc">reverse engineered blitzortung's websocket binary protocol, then built ingestion with a custom decoder, postgis spatial indexing, fastapi endpoints, and full docker containerization.</p>
+        <ul class="entry-points">
+          <li>identified the wire format as lzw and wrote the decompressor from scratch, taking decode accuracy to 100% with exact nanosecond timestamps.</li>
+          <li>processed 200&ndash;500 strikes per minute into postgresql with spatial and time series indexes.</li>
+          <li>orchestrated database, ingestion, and api as three containers with health checks and persistent storage.</li>
+        </ul>
+        <div class="stack">
+          <span>websocket</span><span>binary decoder</span><span>postgresql</span><span>postgis</span><span>fastapi</span><span>docker</span>
+        </div>
+      </article>
+
+      <article class="entry" id="trends">
+        <div class="entry-top">
+          <h3 class="entry-title">
+            <a href="https://github.com/kevinkiyosepyo/trends-for-forum">trends for forum <span aria-hidden="true">&rarr;</span></a>
+          </h3>
+          <p class="entry-date"><time datetime="2026">2026</time></p>
+        </div>
+        <p class="entry-desc">deployed fastapi app with sse streaming, google trends ingestion, an hmac authed market api, and an ipo style scoring engine. built at the sdxucsd agent hackathon.</p>
+        <div class="stack">
+          <span>fastapi</span><span>sse</span><span>hmac</span><span>scoring engine</span><span>claude api</span>
+        </div>
+      </article>
+
+      <article class="entry" id="oncall">
+        <div class="entry-top">
+          <h3 class="entry-title">
+            <a href="https://github.com/kevinkiyosepyo/oncall-agent">oncall agent <span aria-hidden="true">&rarr;</span></a>
+          </h3>
+          <p class="entry-date"><time datetime="2026">2026</time></p>
+        </div>
+        <p class="entry-desc">autonomous incident response agent. a chaos harness buries a bad commit in a live service's history and degrades it for real, then the agent correlates commits, diffs, log aggregates, and runbooks through three claude triage steps, posts a structured brief to slack, and writes the postmortem on resolve. 12/12 on the end to end eval, including a no culprit negative control.</p>
+        <div class="stack">
+          <span>python</span><span>claude api</span><span>chaos injection</span><span>postgresql</span><span>slack</span><span>docker</span>
+        </div>
+      </article>
+    </section>
+
+    <section aria-labelledby="ongoing">
+      <h2 id="ongoing">ongoing</h2>
+
+      <article class="entry" id="job-agent">
+        <div class="entry-top">
+          <h3 class="entry-title">
+            <a href="https://github.com/kevinkiyosepyo/job-agent">job application agent <span aria-hidden="true">&rarr;</span></a>
+          </h3>
+          <p class="entry-date"><time datetime="2026-07">jul 2026</time> &ndash; present</p>
+        </div>
+        <p class="entry-desc">browser automation that carries an application from account creation through submission, with a dedicated handler per ats instead of one brittle generic form filler.</p>
+        <ul class="entry-points">
+          <li>handlers for greenhouse, workday, oracle, and ashby, each absorbing that platform's quirks.</li>
+          <li>records submission evidence so a filled form is never mistaken for a completed application.</li>
+        </ul>
+        <div class="stack">
+          <span>python</span><span>chrome devtools</span><span>claude api</span><span>slack</span>
+        </div>
+      </article>
+
+      <article class="entry" id="ridewatch">
+        <div class="entry-top">
+          <h3 class="entry-title">
+            <a href="https://github.com/kevinkiyosepyo/ridewatch">ridewatch <span aria-hidden="true">&rarr;</span></a>
+          </h3>
+          <p class="entry-date"><time datetime="2026">2026</time></p>
+        </div>
+        <p class="entry-desc">transit reliability tracker that reconciles gtfs realtime feeds against the published schedule, so a rider can see how often their stop actually runs late.</p>
+        <div class="stack">
+          <span>go</span><span>postgresql</span><span>gtfs-realtime</span><span>maplibre</span><span>k3s</span>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <span>&copy; 2026 kevin kiyose pyo</span>
+    <span>kevinpyo.com</span>
+  </footer>
+</div>
+</body>
+</html>

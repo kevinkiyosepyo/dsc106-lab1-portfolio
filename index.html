@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<title>Kevin Kiyose Pyo: Personal site and portfolio</title>
+<meta name="author" content="Kevin Kiyose Pyo" />
+<meta name="description" content="Kevin Kiyose Pyo. Data science at UC San Diego, building data pipelines in San Diego." />
+<meta property="og:title" content="Kevin Kiyose Pyo: Personal site and portfolio" />
+<meta property="og:description" content="Data science at UC San Diego, building data pipelines." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://kevinkiyosepyo.github.io/dsc106-lab1-portfolio" />
+<link rel="canonical" href="https://kevinkiyosepyo.github.io/dsc106-lab1-portfolio" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="storm" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">skip to content</a>
+
+<nav class="site-nav" aria-label="site navigation">
+  <a href="index.html" aria-current="page">home</a>
+  <a href="projects/index.html">projects</a>
+  <a href="resume/index.html">resume</a>
+  <a href="contact/index.html">contact</a>
+  <a href="https://github.com/kevinkiyosepyo" target="_blank" rel="noopener noreferrer">github <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a>
+</nav>
+
+<div class="wrap">
+  <header class="page-head home">
+    <div class="intro">
+      <div>
+        <h1>kevin kiyose pyo</h1>
+        <p class="tagline">
+          data science @ uc san diego
+          <span class="sep">·</span> building data pipelines
+          <span class="sep">·</span> san diego
+        </p>
+        <p class="lede">i turn messy, real world data into systems that hold up in production. currently a data science student at uc san diego, graduating <time datetime="2028-05">may 2028</time>, with research and engineering work at the qualcomm institute and hdsi.</p>
+      </div>
+      <figure class="portrait">
+        <img src="images/kevin-portrait.jpg" alt="Black and white portrait of Kevin Kiyose Pyo." width="265" height="342" />
+        <figcaption>kevin, in grayscale</figcaption>
+      </figure>
+    </div>
+
+    <nav class="links" aria-label="elsewhere">
+      <a href="https://github.com/kevinkiyosepyo" target="_blank" rel="noopener noreferrer">github</a>
+      <a href="https://www.linkedin.com/in/kevin-pyo/" target="_blank" rel="noopener noreferrer">linkedin</a>
+      <a href="mailto:kevinkpyo@gmail.com">email</a>
+      <a href="resume/index.html">resume</a>
+    </nav>
+
+    <!-- signature: lightning pipeline readout (decorative motif tied to the project below) -->
+    <div class="feed" aria-hidden="true">
+      <div class="feed-head">
+        <span><span class="dot"></span>lightning pipeline</span>
+        <span>blitzortung · decoded</span>
+      </div>
+      <div class="feed-rows" id="feedRows"></div>
+      <div class="feed-note">stylized readout of the strike pipeline below</div>
+    </div>
+  </header>
+
+  <main id="main">
+  <section>
+    <div class="idx">01 / Background</div>
+    <h2>Background</h2>
+    <div class="lede">
+      <p>grew up in a military family, moving between bases and overseas. learned to adapt fast and play with the cards that were delt.</p>
+      <p>Hobbies: Valorant, hiking, snowboarding, surfing, gym, doomscrolling, reading classics</p>
+      <p>Turning random messy real world data into systems that hold up in production.</p>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="idx">02 / work</div>
+    <h2>work</h2>
+
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-title">mail clerk @ USPS, camp humphreys</div>
+        <div class="entry-date">2021</div>
+      </div>
+      <p class="entry-desc">ran high volume mail processing on a military installation abroad.</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-title">researcher, @ JSHS and NASA</div>
+        <div class="entry-date">2022</div>
+      </div>
+      <p class="entry-desc">Army DEVCOM student researcher. Presented findings in a national conference</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-title">barista, starbucks @ target</div>
+        <div class="entry-date">2023-2024</div>
+      </div>
+      <p class="entry-desc">highschool part time job</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-title">data science researcher @ smarr lab, hdsi</div>
+        <div class="entry-date">April 2026</div>
+      </div>
+      <p class="entry-desc">rebuilt query paths over 700M+ rows in bigquery, cutting runtime by 7x.</p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-title">research @ calit2</div>
+        <div class="entry-date">June 2026</div>
+      </div>
+      <p class="entry-desc">built data workflows on couchdb for a sensor and survey project.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="idx">03 / projects</div>
+    <h2>projects</h2>
+
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-title">
+          <a href="https://github.com/kevinkiyosepyo">lightning strike data pipeline →</a>
+        </div>
+        <div class="entry-date">2025</div>
+      </div>
+      <p class="entry-desc">reverse engineered blitzortung's websocket binary protocol, then built ingestion with a custom decoder, postgis spatial indexing, fastapi endpoints, and full docker containerization.</p>
+      <div class="stack">
+        <span>websocket</span><span>binary decoder</span><span>postgresql</span><span>postgis</span><span>fastapi</span><span>docker</span>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-title">
+          <a href="https://github.com/kevinkiyosepyo/trends-for-forum">trends for forum →</a>
+        </div>
+        <div class="entry-date">2026</div>
+      </div>
+      <p class="entry-desc">deployed fastapi app with sse streaming, google trends ingestion, an hmac authed market api, and an ipo style scoring engine. built at the sdxucsd agent hackathon.</p>
+      <div class="stack">
+        <span>fastapi</span><span>sse</span><span>hmac</span><span>scoring engine</span><span>claude api</span>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-top">
+        <div class="entry-title">
+          <a href="https://github.com/kevinkiyosepyo/oncall-agent">oncall agent →</a>
+        </div>
+        <div class="entry-date">2026</div>
+      </div>
+      <p class="entry-desc">autonomous incident response agent. a chaos harness buries a bad commit in a live service's history and degrades it for real, then the agent correlates commits, diffs, log aggregates, and runbooks through three claude triage steps, posts a structured brief to slack, and writes the postmortem on resolve. 12/12 on the end to end eval, including a no culprit negative control.</p>
+      <div class="stack">
+        <span>python</span><span>claude api</span><span>chaos injection</span><span>postgresql</span><span>slack</span><span>docker</span>
+      </div>
+    </div>
+  </section>
+
+
+  </main>
+
+  <footer>
+    <span>© 2026 kevin kiyose pyo</span>
+    <span>github pages · dsc106 lab 1</span>
+  </footer>
+</div>
+
+<script>
+  // Decorative strike readout. Cycles plausible coordinates to evoke the pipeline.
+  // Not a live feed; purely a visual motif for the signature panel.
+  (function () {
+    var rows = document.getElementById("feedRows");
+    if (!rows) return;
+    var places = [
+      ["32.71N", "117.16W"], ["33.19N", "117.38W"], ["32.84N", "117.27W"],
+      ["34.05N", "118.24W"], ["32.53N", "117.04W"], ["33.68N", "117.83W"],
+      ["31.86N", "116.60W"], ["32.99N", "117.06W"], ["33.42N", "117.61W"]
+    ];
+    function stamp() {
+      var d = new Date();
+      function p(n){ return (n < 10 ? "0" : "") + n; }
+      return p(d.getHours()) + ":" + p(d.getMinutes()) + ":" + p(d.getSeconds());
+    }
+    function kA() { return (Math.random() * 60 + 5).toFixed(1) + " kA"; }
+    function push() {
+      var loc = places[Math.floor(Math.random() * places.length)];
+      var row = document.createElement("div");
+      row.className = "feed-row new";
+      row.innerHTML =
+        '<span class="t">' + stamp() + '</span>' +
+        '<span>' + loc[0] + "  " + loc[1] + '</span>' +
+        '<span class="c">' + kA() + '</span>';
+      rows.insertBefore(row, rows.firstChild);
+      while (rows.children.length > 4) rows.removeChild(rows.lastChild);
+      setTimeout(function () { row.classList.remove("new"); }, 900);
+    }
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    push(); push(); push();
+    if (!reduce) setInterval(push, 2600);
+  })();
+
+</script>
+</body>
+</html>

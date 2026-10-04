@@ -1,0 +1,11 @@
+{
+  "validator": "https://validator.w3.org/nu/?out=json",
+  "validated_at": "2026-10-03",
+  "note": "Exact final HTML bytes were posted with Content-Type: text/html; charset=utf-8. Info notices are omitted; no errors or warnings were returned.",
+  "pages": {
+    "index.html": {"errors_or_warnings": [], "info_count": 15},
+    "projects/index.html": {"errors_or_warnings": [], "info_count": 14},
+    "resume/index.html": {"errors_or_warnings": [], "info_count": 14},
+    "contact/index.html": {"errors_or_warnings": [], "info_count": 17}
+  }
+}
